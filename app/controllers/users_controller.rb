@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  
-  before_action :is_mathing_login_user, only: [:edit, :update]
+    
+    before_action :is_mathing_login_user, only: [:edit, :update]
   
   def show
     @user = User.find(params[:id])
@@ -29,4 +29,5 @@ class UsersController < ApplicationController
       redirect_to post_images_path
     end
   end
+
 end
